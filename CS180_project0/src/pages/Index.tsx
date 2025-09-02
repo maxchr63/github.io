@@ -2,6 +2,16 @@ import HeroSection from "@/components/HeroSection";
 import ProjectPart from "@/components/ProjectPart";
 import ImageGallery from "@/components/ImageGallery";
 
+// Import all images
+import image05 from "@/assets/0.5.jpeg";
+import image1 from "@/assets/1.jpeg";
+import image2 from "@/assets/2.jpeg";
+import image3 from "@/assets/3.jpeg";
+import image5 from "@/assets/5.jpeg";
+import nonStretchedStreet from "@/assets/Non_stretched_street.jpeg";
+import streetStretched from "@/assets/Street_stretched.jpeg";
+import dollyZoom from "@/assets/dolly_zoom.gif";
+
 const Index = () => {
   return (
     <div className="min-h-screen">
@@ -21,11 +31,11 @@ const Index = () => {
           layout="horizontal-scroll" 
           labels={["0.5 x Zoom", "1 x Zoom", "2 x Zoom", "3 x Zoom", "5 x Zoom"]}
           images={[
-            "/src/assets/0.5.jpeg",
-            "/src/assets/1.jpeg",
-            "/src/assets/2.jpeg",
-            "/src/assets/3.jpeg",
-            "/src/assets/5.jpeg",
+            image05,
+            image1,
+            image2,
+            image3,
+            image5,
           ]}
           aspectRatio="portrait"
         />
@@ -44,8 +54,8 @@ const Index = () => {
           layout="grid" 
           labels={["Zoomed In (Stretched)", "Close Up (Natural Depth)"]}
           images={[
-            "/src/assets/Non_stretched_street.jpeg",
-            "/src/assets/Street_stretched.jpeg",
+            nonStretchedStreet,
+            streetStretched,
           ]}
         />
       </ProjectPart>
@@ -63,7 +73,7 @@ const Index = () => {
           layout="single" 
           labels={["Dolly Zoom GIF Animation"]}
           images={[
-            "/src/assets/dolly_zoom.gif",
+            dollyZoom,
           ]}
         />
       </ProjectPart>
