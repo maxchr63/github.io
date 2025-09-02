@@ -21,25 +21,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
 
       - name: Install dependencies
-        run: |
-          cd CS180_project0
-          bun install
+        working-directory: ./CS180_project0
+        run: bun install
 
       - name: Build
-        run: |
-          cd CS180_project0
-          bun run build
+        working-directory: ./CS180_project0
+        run: bun run build
         env:
           NODE_ENV: production
 
