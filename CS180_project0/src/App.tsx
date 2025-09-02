@@ -11,8 +11,8 @@ const queryClient = new QueryClient();
 
 const App = () => {
   // Get the base name from the environment
-  const basename = import.meta.env.PROD ? '/please-let-me-in-CS180' : '';
-  
+  const basename = import.meta.env.PROD ? '/github.io/' : '';
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
