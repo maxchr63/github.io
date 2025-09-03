@@ -1,4 +1,4 @@
-import { ChevronRight, Camera, ArrowRight, ArrowDown } from "lucide-react";
+import { Camera, ArrowDown } from "lucide-react";
 import berkeleyHero from "@/assets/berkeley-hero.jpg";
 
 const HeroSection = () => {
@@ -16,10 +16,10 @@ const HeroSection = () => {
 
       {/* Floating Arrow Animations */}
       <div className="absolute inset-0 pointer-events-none">
-        <ArrowRight className="absolute top-1/4 left-1/4 w-8 h-8 text-berkeley-blue/30 animate-bounce" style={{animationDelay: '0s'}} />
+        {/* <ArrowRight className="absolute top-1/4 left-1/4 w-8 h-8 text-berkeley-blue/30 animate-bounce" style={{animationDelay: '0s'}} />
         <ArrowDown className="absolute top-1/3 right-1/3 w-6 h-6 text-berkeley-navy/40 animate-bounce" style={{animationDelay: '1s'}} />
         <ChevronRight className="absolute bottom-1/3 left-1/3 w-10 h-10 text-berkeley-blue/20 animate-bounce" style={{animationDelay: '2s'}} />
-        <ArrowRight className="absolute top-1/2 right-1/4 w-7 h-7 text-berkeley-navy/30 animate-bounce" style={{animationDelay: '0.5s'}} />
+        <ArrowRight className="absolute top-1/2 right-1/4 w-7 h-7 text-berkeley-navy/30 animate-bounce" style={{animationDelay: '0.5s'}} /> */}
       </div>
 
       <div className="relative z-10 container mx-auto px-6 pt-32 pb-20">
@@ -32,12 +32,12 @@ const HeroSection = () => {
 
           {/* Main Title */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-berkeley-navy via-berkeley-blue to-berkeley-navy bg-clip-text text-transparent leading-tight">
-            Becoming Friends with Your Camera
+            Becoming Friends with my Camera
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
-            Understanding the relationship between perspective, focal length, and the center of projection through hands-on photography exercises.
+            The goal of this project is to understand the relationship between perspective, focal length, and the center of projection through different hands-on photography exercises.
           </p>
 
           {/* Due Date */}

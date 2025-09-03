@@ -21,9 +21,12 @@ const Index = () => {
       {/* Part 1: Selfie Comparison */}
       <ProjectPart
         partNumber={1}
-        title="Portrait Photography: The Wrong Way vs. The Right Way"
+        title='Portrait Photography: "The Wrong Way vs. The Right Way"'
         description="Understand how distance and zoom affect facial proportions in portrait photography"
-        detailedDescription=" Eventhough face size remains similar between photos,  the facial proportions look dramatically different."
+        detailedDescription={[
+          "Result: Although face size remains similar between photos, the facial proportions look dramatically different.",
+          "The close-up selfie appears distorted due to perspective distortion, where proximity to the lens makes closer features like your nose seem disproportionately large, while stepping back and zooming in compresses depth for more flattering, natural proportions. However, beyond the point of 3 x zoom, we are already far enough away that further zooming yields only minimal, less perceptible changes in perspective."
+        ]}
         className="bg-gradient-to-r from-berkeley-light/10 to-transparent"
       >
         <ImageGallery 
@@ -46,16 +49,17 @@ const Index = () => {
         partNumber={2}
         title="Architectural Perspective Compression"
         description="Explore how focal length affects the perception of depth in urban scenes"
-        detailedDescription="The first image (zoomed in from distance) appears compressed and flattened, while the second image (close up without zoom) should show more natural depth and perspective. Both images capture roughly the same scene size but with vastly different spatial relationships."
+        detailedDescription={["Result: The zoomed telephoto image exhibits perspective compression, where the distant camera position minimizes the relative size difference between foreground and background objects, causing the car on the right to appear flattened. Conversely, the non-zoomed shot exaggerates perspective by making the car's nearer components look significantly larger than its farther ones, showing greater three-dimensional depth.",
+        "This comparison shows that perceived spatial depth is dictated by the camera's physical location and cannot be compensated for with its focal length."]}
         className="bg-background"
       >
         <ImageGallery 
           count={2} 
           layout="grid" 
-          labels={["Zoomed In (Stretched)", "Close Up (Natural Depth)"]}
+          labels={["No Zoom (Appears Stretched)", "Zoomed In (Appears Compressed)"]}
           images={[
-            nonStretchedStreet,
             streetStretched,
+            nonStretchedStreet,
           ]}
         />
       </ProjectPart>
@@ -65,7 +69,9 @@ const Index = () => {
         partNumber={3}
         title="The Dolly Zoom (Vertigo Effect)"
         description="Create the classic Hitchcock camera movement effect"
-        detailedDescription="Your GIF should demonstrate the characteristic 'Vertigo effect' where the subject remains the same size but the background appears to stretch or compress dramatically. This creates a disorienting visual effect that makes the viewer feel like the space is shifting around the subject."
+        detailedDescription={["Result: In this example, the Vertigo effect is created by moving away from the subject while zooming in to keep the subject the same size in frame. This produces a disorienting visual where the background appears to expand substantially and stretch outward due to the wider focal length from the closer position. The surrounding space seems to grow larger around the stationary subject, creating spatial distortion and an unsettling sensation as the environment expands while the central subject remains unchanged.",
+        "Note: The reason why the background appears to stretch is most likely because the the object of the same size is in the middle of the scene this time opposed to the first car on the right hand side in Part 2."
+        ]}
         className="bg-gradient-to-l from-berkeley-light/10 to-transparent"
       >
         <ImageGallery 

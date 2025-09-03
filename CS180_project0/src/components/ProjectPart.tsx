@@ -5,7 +5,7 @@ interface ProjectPartProps {
   partNumber: number;
   title: string;
   description: string;
-  detailedDescription: string;
+  detailedDescription: string | string[];
   children: React.ReactNode;
   className?: string;
 }
@@ -34,9 +34,18 @@ const ProjectPart = ({
               {description}
             </p>
             <div className="bg-muted/50 rounded-lg p-6 border border-berkeley-blue/10">
-              <p className="text-berkeley-navy leading-relaxed">
-                {detailedDescription}
-              </p>
+              {/* <div className="text-berkeley-navy leading-relaxed space-y-4 "></div>text-justify */}
+              <div className="text-berkeley-navy leading-relaxed space-y-4 ">
+                {Array.isArray(detailedDescription) ? (
+                  detailedDescription.map((paragraph, index) => (
+                    <p key={index}>
+                      {paragraph}
+                    </p>
+                  ))
+                ) : (
+                  <p>{detailedDescription}</p>
+                )}
+              </div>
             </div>
           </div>
 
