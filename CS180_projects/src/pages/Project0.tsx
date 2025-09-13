@@ -38,11 +38,11 @@ const Project0 = () => {
           layout="horizontal-scroll" 
           labels={["0.5 x Zoom", "1 x Zoom", "2 x Zoom", "3 x Zoom", "5 x Zoom"]}
           images={[
-            "0.5.jpeg",
-            "1.jpeg",
-            "2.jpeg",
-            "3.jpeg",
-            "5.jpeg",
+            "project0/0.5.jpeg",
+            "project0/1.jpeg",
+            "project0/2.jpeg",
+            "project0/3.jpeg",
+            "project0/5.jpeg",
           ]}
           aspectRatio="portrait"
         />
@@ -62,8 +62,8 @@ const Project0 = () => {
           layout="grid" 
           labels={["No Zoom (Appears Stretched)", "Zoomed In (Appears Compressed)"]}
           images={[
-            "Street_stretched.jpeg",
-            "Non_stretched_street.jpeg",
+            "project0/Street_stretched.jpeg",
+            "project0/Non_stretched_street.jpeg",
           ]}
         />
       </ProjectPart>
@@ -83,7 +83,7 @@ const Project0 = () => {
           layout="single" 
           labels={["Dolly Zoom GIF Animation"]}
           images={[
-            "dolly_zoom.gif",
+            "project0/dolly_zoom.gif",
           ]}
         />
       </ProjectPart>

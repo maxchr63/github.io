@@ -27,11 +27,11 @@ jobs:
           bun-version: latest
 
       - name: Install dependencies
-        working-directory: ./CS180_project0
+        working-directory: ./CS180_projects
         run: bun install
 
       - name: Build
-        working-directory: ./CS180_project0
+        working-directory: ./CS180_projects
         run: bun run build
         env:
           NODE_ENV: production
@@ -42,7 +42,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './CS180_project0/dist'
+          path: './CS180_projects/dist'
 
   deploy:
     environment:

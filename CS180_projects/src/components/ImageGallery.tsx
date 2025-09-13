@@ -39,7 +39,7 @@ const ImageGallery = ({ count, layout, labels = [], images = [], aspectRatio }: 
           // Show image
           <>
             <img 
-              src={images[index]} 
+              src={`${import.meta.env.BASE_URL}${images[index]}`} 
               alt={labels[index] || `Image ${index + 1}`}
               className="w-full h-full object-cover"
             />

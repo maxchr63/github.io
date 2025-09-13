@@ -287,10 +287,10 @@ const Project1 = () => {
                   <CardContent>
                     <ImageWithModal 
                       imageName={`${image.name}.jpg`}
-                      imageSrc={`/project1/alignment_only_images/without_alignment_${image.name}.jpg`}
+                      imageSrc={`${import.meta.env.BASE_URL}project1/alignment_only_images/without_alignment_${image.name}.jpg`}
                     >
                       <img 
-                        src={`/project1/alignment_only_images/without_alignment_${image.name}.jpg`}
+                        src={`${import.meta.env.BASE_URL}project1/alignment_only_images/without_alignment_${image.name}.jpg`}
                         alt={`${image.name} aligned result`}
                         className="w-full h-64 object-contain rounded-lg mb-4 bg-gray-50"
                         onError={(e) => {
