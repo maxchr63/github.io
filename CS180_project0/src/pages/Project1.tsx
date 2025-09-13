@@ -8,7 +8,7 @@
               {/* Images from all_bells_and_whistles */}
               <div className="flex flex-col items-center">
                 <img 
-                  src="/src/assets/project1/all_bells_and_whistles/church_b_n_w.png"
+                  src="/project1/all_bells_and_whistles/church_b_n_w.png"
                   alt="church"
                   className="w-full max-w-md h-72 object-contain rounded-lg bg-white shadow mb-2"
                 />
@@ -16,7 +16,7 @@
               </div>
               <div className="flex flex-col items-center">
                 <img 
-                  src="/src/assets/project1/all_bells_and_whistles/eleven_adults_b_n_w.png"
+                  src="/project1/all_bells_and_whistles/eleven_adults_b_n_w.png"
                   alt="eleven_adults"
                   className="w-full max-w-md h-72 object-contain rounded-lg bg-white shadow mb-2"
                 />
@@ -24,7 +24,7 @@
               </div>
               <div className="flex flex-col items-center">
                 <img 
-                  src="/src/assets/project1/all_bells_and_whistles/icon_b_n_w.png"
+                  src="/project1/all_bells_and_whistles/icon_b_n_w.png"
                   alt="icon"
                   className="w-full max-w-md h-72 object-contain rounded-lg bg-white shadow mb-2"
                 />
@@ -32,7 +32,7 @@
               </div>
               <div className="flex flex-col items-center">
                 <img 
-                  src="/src/assets/project1/all_bells_and_whistles/self_portrait_b_n_w.png"
+                  src="/project1/all_bells_and_whistles/self_portrait_b_n_w.png"
                   alt="self_portrait"
                   className="w-full max-w-md h-72 object-contain rounded-lg bg-white shadow mb-2"
                 />
@@ -47,7 +47,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Camera, ArrowDown } from "lucide-react";
-import berkeleyHero from "@/assets/berkeley-hero.jpg";
+// import berkeleyHero from "@/assets/berkeley-hero.jpg"; // Now using public folder
 import { useState } from "react";
 
 const Project1 = () => {
@@ -89,7 +89,7 @@ const Project1 = () => {
         {/* Animated Background */}
         <div className="absolute inset-0">
           <img 
-            src={berkeleyHero}
+            src="/berkeley-hero.jpg"
             alt="Berkeley cityscape with traffic direction signs"
             className="w-full h-full object-cover opacity-40"
           />
@@ -140,9 +140,9 @@ const Project1 = () => {
               <div className="flex flex-col gap-8">
                 <div className="text-center">
                   <ImageWithModal imageName="Self Portrait - 3 Images"
-                    imageSrc="/src/assets/project1/Intro/self_portrait_3_images.jpg">
+                    imageSrc="/project1/Intro/self_portrait_3_images.jpg">
                     <img 
-                      src="/src/assets/project1/Intro/self_portrait_3_images.jpg"
+                      src="/project1/Intro/self_portrait_3_images.jpg"
                       alt="Self Portrait - 3 Images"
                       className="w-full h-64 object-contain rounded-lg bg-gray-50 mb-2"
                     />
@@ -151,9 +151,9 @@ const Project1 = () => {
                 </div>
                 <div className="text-center">
                   <ImageWithModal imageName="Self Portrait - B&W Composite"
-                    imageSrc="/src/assets/project1/Intro/self_portrait_b_n_w.png">
+                    imageSrc="/project1/Intro/self_portrait_b_n_w.png">
                     <img 
-                      src="/src/assets/project1/Intro/self_portrait_b_n_w.png"
+                      src="/project1/Intro/self_portrait_b_n_w.png"
                       alt="Self Portrait - Black and White Composite"
                       className="w-full h-64 object-contain rounded-lg bg-gray-50 mb-2"
                     />
@@ -234,10 +234,10 @@ const Project1 = () => {
                 <div className="mb-6">
                   <ImageWithModal 
                     imageName="Image Pyramid Visualization"
-                    imageSrc="/src/assets/project1/Image_pyramid.png"
+                    imageSrc="/project1/Image_pyramid.png"
                   >
                     <img 
-                      src="/src/assets/project1/Image_pyramid.png"
+                      src="/project1/Image_pyramid.png"
                       alt="Image pyramid visualization showing multi-scale approach"
                       className="w-full max-w-xl mx-auto rounded-lg shadow-lg"
                     />
@@ -287,10 +287,10 @@ const Project1 = () => {
                   <CardContent>
                     <ImageWithModal 
                       imageName={`${image.name}.jpg`}
-                      imageSrc={`/src/assets/project1/alignment_only_images/without_alignment_${image.name}.jpg`}
+                      imageSrc={`/project1/alignment_only_images/without_alignment_${image.name}.jpg`}
                     >
                       <img 
-                        src={`/src/assets/project1/alignment_only_images/without_alignment_${image.name}.jpg`}
+                        src={`/project1/alignment_only_images/without_alignment_${image.name}.jpg`}
                         alt={`${image.name} aligned result`}
                         className="w-full h-64 object-contain rounded-lg mb-4 bg-gray-50"
                         onError={(e) => {
@@ -352,10 +352,10 @@ const Project1 = () => {
                   <CardContent>
                     <ImageWithModal 
                       imageName={`${image.name}.tif`}
-                      imageSrc={`/src/assets/project1/alignment_only_images/without_alignment_${image.name}.jpg`}
+                      imageSrc={`/project1/alignment_only_images/without_alignment_${image.name}.jpg`}
                     >
                       <img 
-                        src={`/src/assets/project1/alignment_only_images/without_alignment_${image.name}.jpg`}
+                        src={`/project1/alignment_only_images/without_alignment_${image.name}.jpg`}
                         alt={`${image.name} aligned result`}
                         className="w-full h-56 object-contain rounded-lg mb-3 bg-gray-50"
                         onError={(e) => {
@@ -410,10 +410,10 @@ const Project1 = () => {
                 <CardContent>
                   <ImageWithModal 
                     imageName="Cathedral Euclidean vs NCC Comparison"
-                    imageSrc="/src/assets/project1/alignment_only_images/eucl_and_ncc_side_by_side_cathedral.jpg"
+                    imageSrc="/project1/alignment_only_images/eucl_and_ncc_side_by_side_cathedral.jpg"
                   >
                     <img 
-                      src="/src/assets/project1/alignment_only_images/eucl_and_ncc_side_by_side_cathedral.jpg"
+                      src="/project1/alignment_only_images/eucl_and_ncc_side_by_side_cathedral.jpg"
                       alt="Cathedral euclidean vs ncc comparison"
                       className="w-full h-auto aspect-[2/1] object-contain rounded-lg mb-4"
                       onError={(e) => {
@@ -455,10 +455,10 @@ const Project1 = () => {
                 <CardContent>
                   <ImageWithModal 
                     imageName="Three Generations Euclidean vs NCC Comparison"
-                    imageSrc="/src/assets/project1/alignment_only_images/eucl_and_ncc_side_by_side_three_generations.jpg"
+                    imageSrc="/project1/alignment_only_images/eucl_and_ncc_side_by_side_three_generations.jpg"
                   >
                     <img 
-                      src="/src/assets/project1/alignment_only_images/eucl_and_ncc_side_by_side_three_generations.jpg"
+                      src="/project1/alignment_only_images/eucl_and_ncc_side_by_side_three_generations.jpg"
                       alt="Three generations euclidean vs ncc comparison"
                       className="w-full h-auto aspect-[2/1] object-contain rounded-lg mb-4"
                       onError={(e) => {
@@ -595,10 +595,10 @@ const Project1 = () => {
                   <h4 className="text-lg font-semibold text-berkeley-navy mb-2">Church - Auto Cropped</h4>
                   <ImageWithModal 
                     imageName="Church Auto Cropping"
-                    imageSrc="/src/assets/project1/bells_and_whistles/church_auto_cropping.png"
+                    imageSrc="/project1/bells_and_whistles/church_auto_cropping.png"
                   >
                     <img 
-                      src="/src/assets/project1/bells_and_whistles/church_auto_cropping.png"
+                      src="/project1/bells_and_whistles/church_auto_cropping.png"
                       alt="Church auto cropping result"
                       className="w-full h-64 object-contain rounded-lg bg-gray-50"
                     />
@@ -608,10 +608,10 @@ const Project1 = () => {
                   <h4 className="text-lg font-semibold text-berkeley-navy mb-2">Lastochikino - Auto Cropped</h4>
                   <ImageWithModal 
                     imageName="Lastochikino Auto Cropping"
-                    imageSrc="/src/assets/project1/bells_and_whistles/lastochikino_auto_cropping.png"
+                    imageSrc="/project1/bells_and_whistles/lastochikino_auto_cropping.png"
                   >
                     <img 
-                      src="/src/assets/project1/bells_and_whistles/lastochikino_auto_cropping.png"
+                      src="/project1/bells_and_whistles/lastochikino_auto_cropping.png"
                       alt="Lastochikino auto cropping result"
                       className="w-full h-64 object-contain rounded-lg bg-gray-50"
                     />
@@ -652,10 +652,10 @@ const Project1 = () => {
                   <h4 className="text-lg font-semibold text-berkeley-navy mb-2">Melons - White Balance Percent</h4>
                   <ImageWithModal 
                     imageName="Melons White Balance Percent"
-                    imageSrc="/src/assets/project1/bells_and_whistles/melons_white_balance_percentile.png"
+                    imageSrc="/project1/bells_and_whistles/melons_white_balance_percentile.png"
                   >
                     <img 
-                      src="/src/assets/project1/bells_and_whistles/melons_white_balance_percentile.png"
+                      src="/project1/bells_and_whistles/melons_white_balance_percentile.png"
                       alt="Melons white balance percent method"
                       className="w-full h-64 object-contain rounded-lg bg-gray-50"
                     />
@@ -665,10 +665,10 @@ const Project1 = () => {
                   <h4 className="text-lg font-semibold text-berkeley-navy mb-2">Melons - White Balance All Gray</h4>
                   <ImageWithModal 
                     imageName="Melons White Balance All Gray"
-                    imageSrc="/src/assets/project1/bells_and_whistles/melons_white_balance_all_gray.png"
+                    imageSrc="/project1/bells_and_whistles/melons_white_balance_all_gray.png"
                   >
                     <img 
-                      src="/src/assets/project1/bells_and_whistles/melons_white_balance_all_gray.png"
+                      src="/project1/bells_and_whistles/melons_white_balance_all_gray.png"
                       alt="Melons white balance all gray method"
                       className="w-full h-64 object-contain rounded-lg bg-gray-50"
                     />
@@ -678,10 +678,10 @@ const Project1 = () => {
                   <h4 className="text-lg font-semibold text-berkeley-navy mb-2">Melons - White Balance Combined</h4>
                   <ImageWithModal 
                     imageName="Melons White Balance Combined"
-                    imageSrc="/src/assets/project1/bells_and_whistles/melons_white_balance_combined.png"
+                    imageSrc="/project1/bells_and_whistles/melons_white_balance_combined.png"
                   >
                     <img 
-                      src="/src/assets/project1/bells_and_whistles/melons_white_balance_combined.png"
+                      src="/project1/bells_and_whistles/melons_white_balance_combined.png"
                       alt="Melons white balance combined method"
                       className="w-full h-64 object-contain rounded-lg bg-gray-50"
                     />
@@ -691,10 +691,10 @@ const Project1 = () => {
                   <h4 className="text-lg font-semibold text-berkeley-navy mb-2">Self Portrait - White Balance Combined</h4>
                   <ImageWithModal 
                     imageName="Self Portrait White Balance Combined"
-                    imageSrc="/src/assets/project1/bells_and_whistles/self_portait_white_balance_combined.png"
+                    imageSrc="/project1/bells_and_whistles/self_portait_white_balance_combined.png"
                   >
                     <img 
-                      src="/src/assets/project1/bells_and_whistles/self_portait_white_balance_combined.png"
+                      src="/project1/bells_and_whistles/self_portait_white_balance_combined.png"
                       alt="Self portrait white balance combined method"
                       className="w-full h-64 object-contain rounded-lg bg-gray-50"
                     />
@@ -704,10 +704,10 @@ const Project1 = () => {
                   <h4 className="text-lg font-semibold text-berkeley-navy mb-2">Harvesters - White Balance Combined</h4>
                   <ImageWithModal 
                     imageName="Harvesters White Balance Combined"
-                    imageSrc="/src/assets/project1/bells_and_whistles/harvesters_white_balance_combined.png"
+                    imageSrc="/project1/bells_and_whistles/harvesters_white_balance_combined.png"
                   >
                     <img 
-                      src="/src/assets/project1/bells_and_whistles/harvesters_white_balance_combined.png"
+                      src="/project1/bells_and_whistles/harvesters_white_balance_combined.png"
                       alt="Harvesters white balance combined method"
                       className="w-full h-64 object-contain rounded-lg bg-gray-50"
                     />
@@ -745,10 +745,10 @@ const Project1 = () => {
                   <p className="text-sm text-gray-600 mb-2">Gamma correction: mean_intensity=0.534, gamma=1.594</p>
                   <ImageWithModal 
                     imageName="Emir Contrast"
-                    imageSrc="/src/assets/project1/bells_and_whistles/emir_contrast.png"
+                    imageSrc="/project1/bells_and_whistles/emir_contrast.png"
                   >
                     <img 
-                      src="/src/assets/project1/bells_and_whistles/emir_contrast.png"
+                      src="/project1/bells_and_whistles/emir_contrast.png"
                       alt="Emir contrast adjustment"
                       className="w-full h-64 object-contain rounded-lg bg-gray-50"
                     />
@@ -759,10 +759,10 @@ const Project1 = () => {
                   <p className="text-sm text-gray-600 mb-2">Gamma correction: mean_intensity=0.512, gamma=1.629</p>
                   <ImageWithModal 
                     imageName="Siren Contrast"
-                    imageSrc="/src/assets/project1/bells_and_whistles/siren_contrast.png"
+                    imageSrc="/project1/bells_and_whistles/siren_contrast.png"
                   >
                     <img 
-                      src="/src/assets/project1/bells_and_whistles/siren_contrast.png"
+                      src="/project1/bells_and_whistles/siren_contrast.png"
                       alt="Siren contrast adjustment"
                       className="w-full h-64 object-contain rounded-lg bg-gray-50"
                     />
@@ -773,10 +773,10 @@ const Project1 = () => {
                   <p className="text-sm text-gray-600 mb-2">Gamma correction: mean_intensity=0.492, gamma=1.025 → This one is very balanced, next to no adjustment necessary</p>
                   <ImageWithModal 
                     imageName="Self Portrait Contrast"
-                    imageSrc="/src/assets/project1/bells_and_whistles/self_portrait_contrast.png"
+                    imageSrc="/project1/bells_and_whistles/self_portrait_contrast.png"
                   >
                     <img 
-                      src="/src/assets/project1/bells_and_whistles/self_portrait_contrast.png"
+                      src="/project1/bells_and_whistles/self_portrait_contrast.png"
                       alt="Self portrait contrast adjustment"
                       className="w-full h-64 object-contain rounded-lg bg-gray-50"
                     />
@@ -821,10 +821,10 @@ const Project1 = () => {
                   <h4 className="text-lg font-semibold text-berkeley-navy mb-2">Church - Color Adjustment</h4>
                   <ImageWithModal 
                     imageName="Church Color Adjustment"
-                    imageSrc="/src/assets/project1/bells_and_whistles/church_color_adjustment.png"
+                    imageSrc="/project1/bells_and_whistles/church_color_adjustment.png"
                   >
                     <img 
-                      src="/src/assets/project1/bells_and_whistles/church_color_adjustment.png"
+                      src="/project1/bells_and_whistles/church_color_adjustment.png"
                       alt="Church color adjustment"
                       className="w-full h-64 object-contain rounded-lg bg-gray-50"
                     />
@@ -834,10 +834,10 @@ const Project1 = () => {
                   <h4 className="text-lg font-semibold text-berkeley-navy mb-2">Self Portrait - Color Adjustment</h4>
                   <ImageWithModal 
                     imageName="Self Portrait Color Adjustment"
-                    imageSrc="/src/assets/project1/bells_and_whistles/self_portrait_color_adjustment.png"
+                    imageSrc="/project1/bells_and_whistles/self_portrait_color_adjustment.png"
                   >
                     <img 
-                      src="/src/assets/project1/bells_and_whistles/self_portrait_color_adjustment.png"
+                      src="/project1/bells_and_whistles/self_portrait_color_adjustment.png"
                       alt="Self portrait color adjustment"
                       className="w-full h-64 object-contain rounded-lg bg-gray-50"
                     />
@@ -883,10 +883,10 @@ const Project1 = () => {
                   <h4 className="text-lg font-semibold text-berkeley-navy mb-2">Church - Edge Detection</h4>
                   <ImageWithModal 
                     imageName="Church Edge Detection"
-                    imageSrc="/src/assets/project1/bells_and_whistles/church_edge_detection.png"
+                    imageSrc="/project1/bells_and_whistles/church_edge_detection.png"
                   >
                     <img 
-                      src="/src/assets/project1/bells_and_whistles/church_edge_detection.png"
+                      src="/project1/bells_and_whistles/church_edge_detection.png"
                       alt="Church edge detection"
                       className="w-full h-64 object-contain rounded-lg bg-gray-50"
                     />
@@ -896,10 +896,10 @@ const Project1 = () => {
                   <h4 className="text-lg font-semibold text-berkeley-navy mb-2">Italil - Edge Detection</h4>
                   <ImageWithModal 
                     imageName="Italil Edge Detection"
-                    imageSrc="/src/assets/project1/bells_and_whistles/italil_edge_detection.png"
+                    imageSrc="/project1/bells_and_whistles/italil_edge_detection.png"
                   >
                     <img 
-                      src="/src/assets/project1/bells_and_whistles/italil_edge_detection.png"
+                      src="/project1/bells_and_whistles/italil_edge_detection.png"
                       alt="Italil edge detection"
                       className="w-full h-64 object-contain rounded-lg bg-gray-50"
                     />
@@ -909,10 +909,10 @@ const Project1 = () => {
                   <h4 className="text-lg font-semibold text-berkeley-navy mb-2">Emir - Edge Detection</h4>
                   <ImageWithModal 
                     imageName="Emir Edge Detection"
-                    imageSrc="/src/assets/project1/bells_and_whistles/emir_edge_detection.png"
+                    imageSrc="/project1/bells_and_whistles/emir_edge_detection.png"
                   >
                     <img 
-                      src="/src/assets/project1/bells_and_whistles/emir_edge_detection.png"
+                      src="/project1/bells_and_whistles/emir_edge_detection.png"
                       alt="Emir edge detection"
                       className="w-full h-64 object-contain rounded-lg bg-gray-50"
                     />
@@ -936,10 +936,10 @@ const Project1 = () => {
               <div className="flex flex-col items-center">
                 <ImageWithModal 
                   imageName="Church - All Bells and Whistles"
-                  imageSrc="/src/assets/project1/all_bells_and_whistles/church_b_n_w.png"
+                  imageSrc="/project1/all_bells_and_whistles/church_b_n_w.png"
                 >
                   <img 
-                    src="/src/assets/project1/all_bells_and_whistles/church_b_n_w.png"
+                    src="/project1/all_bells_and_whistles/church_b_n_w.png"
                     alt="church"
                     className="w-full max-w-md h-72 object-contain rounded-lg bg-white shadow mb-2"
                   />
@@ -949,10 +949,10 @@ const Project1 = () => {
               <div className="flex flex-col items-center">
                 <ImageWithModal 
                   imageName="Eleven Adults - All Bells and Whistles"
-                  imageSrc="/src/assets/project1/all_bells_and_whistles/eleven_adults_b_n_w.png"
+                  imageSrc="/project1/all_bells_and_whistles/eleven_adults_b_n_w.png"
                 >
                   <img 
-                    src="/src/assets/project1/all_bells_and_whistles/eleven_adults_b_n_w.png"
+                    src="/project1/all_bells_and_whistles/eleven_adults_b_n_w.png"
                     alt="eleven_adults"
                     className="w-full max-w-md h-72 object-contain rounded-lg bg-white shadow mb-2"
                   />
@@ -962,10 +962,10 @@ const Project1 = () => {
               <div className="flex flex-col items-center">
                 <ImageWithModal 
                   imageName="Icon - All Bells and Whistles"
-                  imageSrc="/src/assets/project1/all_bells_and_whistles/icon_b_n_w.png"
+                  imageSrc="/project1/all_bells_and_whistles/icon_b_n_w.png"
                 >
                   <img 
-                    src="/src/assets/project1/all_bells_and_whistles/icon_b_n_w.png"
+                    src="/project1/all_bells_and_whistles/icon_b_n_w.png"
                     alt="icon"
                     className="w-full max-w-md h-72 object-contain rounded-lg bg-white shadow mb-2"
                   />
@@ -975,10 +975,10 @@ const Project1 = () => {
               <div className="flex flex-col items-center">
                 <ImageWithModal 
                   imageName="Self Portrait - All Bells and Whistles"
-                  imageSrc="/src/assets/project1/all_bells_and_whistles/self_portrait_b_n_w.png"
+                  imageSrc="/project1/all_bells_and_whistles/self_portrait_b_n_w.png"
                 >
                   <img 
-                    src="/src/assets/project1/all_bells_and_whistles/self_portrait_b_n_w.png"
+                    src="/project1/all_bells_and_whistles/self_portrait_b_n_w.png"
                     alt="self_portrait"
                     className="w-full max-w-md h-72 object-contain rounded-lg bg-white shadow mb-2"
                   />

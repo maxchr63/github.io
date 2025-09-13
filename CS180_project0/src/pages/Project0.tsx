@@ -3,15 +3,15 @@ import ProjectPart from "@/components/ProjectPart";
 import ImageGallery from "@/components/ImageGallery";
 import ProjectNavigation from "@/components/ProjectNavigation";
 
-// Import all images
-import image05 from "@/assets/project0/0.5.jpeg";
-import image1 from "@/assets/project0/1.jpeg";
-import image2 from "@/assets/project0/2.jpeg";
-import image3 from "@/assets/project0/3.jpeg";
-import image5 from "@/assets/project0/5.jpeg";
-import nonStretchedStreet from "@/assets/project0/Non_stretched_street.jpeg";
-import streetStretched from "@/assets/project0/Street_stretched.jpeg";
-import dollyZoom from "@/assets/project0/dolly_zoom.gif";
+// Import all images - now using public folder paths
+// import image05 from "@/assets/project0/0.5.jpeg";
+// import image1 from "@/assets/project0/1.jpeg";
+// import image2 from "@/assets/project0/2.jpeg";
+// import image3 from "@/assets/project0/3.jpeg";
+// import image5 from "@/assets/project0/5.jpeg";
+// import nonStretchedStreet from "@/assets/project0/Non_stretched_street.jpeg";
+// import streetStretched from "@/assets/project0/Street_stretched.jpeg";
+// import dollyZoom from "@/assets/project0/dolly_zoom.gif";
 
 const Project0 = () => {
   return (
@@ -38,11 +38,11 @@ const Project0 = () => {
           layout="horizontal-scroll" 
           labels={["0.5 x Zoom", "1 x Zoom", "2 x Zoom", "3 x Zoom", "5 x Zoom"]}
           images={[
-            image05,
-            image1,
-            image2,
-            image3,
-            image5,
+            "/0.5.jpeg",
+            "/1.jpeg",
+            "/2.jpeg",
+            "/3.jpeg",
+            "/5.jpeg",
           ]}
           aspectRatio="portrait"
         />
@@ -62,8 +62,8 @@ const Project0 = () => {
           layout="grid" 
           labels={["No Zoom (Appears Stretched)", "Zoomed In (Appears Compressed)"]}
           images={[
-            streetStretched,
-            nonStretchedStreet,
+            "/Street_stretched.jpeg",
+            "/Non_stretched_street.jpeg",
           ]}
         />
       </ProjectPart>
@@ -83,7 +83,7 @@ const Project0 = () => {
           layout="single" 
           labels={["Dolly Zoom GIF Animation"]}
           images={[
-            dollyZoom,
+            "/dolly_zoom.gif",
           ]}
         />
       </ProjectPart>

@@ -5,7 +5,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/github.io/' : '/',
+  base: mode === 'production' ? '/CS180_project0/' : '/',
   server: {
     host: "::",
     port: 8080,

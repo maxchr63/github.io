@@ -1,5 +1,5 @@
 import { Camera, ArrowDown } from "lucide-react";
-import berkeleyHero from "@/assets/berkeley-hero.jpg";
+// import berkeleyHero from "@/assets/berkeley-hero.jpg"; // Now using public folder
 
 const HeroSection = () => {
   return (
@@ -7,7 +7,7 @@ const HeroSection = () => {
       {/* Animated Background */}
       <div className="absolute inset-0">
         <img 
-          src={berkeleyHero}
+          src="/berkeley-hero.jpg"
           alt="Berkeley cityscape with traffic direction signs"
           className="w-full h-full object-cover opacity-40"
         />

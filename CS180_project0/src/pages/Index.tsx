@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import berkeleyHero from "@/assets/berkeley-hero.jpg";
+// import berkeleyHero from "@/assets/berkeley-hero.jpg"; // Now using public folder
 
 const Index = () => {
   const projects = [
@@ -32,7 +32,7 @@ const Index = () => {
       <section className="relative h-96 flex items-center justify-center">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${berkeleyHero})` }}
+          style={{ backgroundImage: `url(/berkeley-hero.jpg)` }}
         >
           <div className="absolute inset-0 bg-berkeley-navy/70"></div>
         </div>
