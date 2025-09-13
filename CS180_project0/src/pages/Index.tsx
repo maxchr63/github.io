@@ -1,95 +1,121 @@
-import HeroSection from "@/components/HeroSection";
-import ProjectPart from "@/components/ProjectPart";
-import ImageGallery from "@/components/ImageGallery";
-
-// Import all images
-import image05 from "@/assets/0.5.jpeg";
-import image1 from "@/assets/1.jpeg";
-import image2 from "@/assets/2.jpeg";
-import image3 from "@/assets/3.jpeg";
-import image5 from "@/assets/5.jpeg";
-import nonStretchedStreet from "@/assets/Non_stretched_street.jpeg";
-import streetStretched from "@/assets/Street_stretched.jpeg";
-import dollyZoom from "@/assets/dolly_zoom.gif";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import berkeleyHero from "@/assets/berkeley-hero.jpg";
 
 const Index = () => {
+  const projects = [
+    {
+      id: 0,
+      title: "Photography and Perspective",
+      subtitle: "Understanding Camera Distance and Focal Length",
+      description: "Understanding perspective, focal length, and the center of projection through practical photography exercises.",
+      status: "Completed",
+      topics: ["Perspective", "Focal Length", "Portrait Photography", "Dolly Zoom"],
+      route: "/project-0"
+    },
+    {
+      id: 1,
+      title: "Images of the Russian Empire",
+      subtitle: "Colorizing the Prokudin-Gorskii Photo Collection",
+      description: "Aligning and colorizing historical Russian Empire photographs using computer vision techniques and image processing algorithms.",
+      status: "Completed",
+      topics: ["Image Alignment", "Color Reconstruction", "Multi-scale Processing", "Historical Photography"],
+      route: "/project-1"
+    }
+  ];
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-br from-berkeley-light/5 to-berkeley-navy/5">
       {/* Hero Section */}
-      <HeroSection />
+      <section className="relative h-96 flex items-center justify-center">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${berkeleyHero})` }}
+        >
+          <div className="absolute inset-0 bg-berkeley-navy/70"></div>
+        </div>
+        <div className="relative z-10 text-center text-white px-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            CS180 Projects
+          </h1>
+          <p className="text-xl md:text-2xl text-berkeley-light">
+            Computer Vision & Computational Photography
+          </p>
+          <p className="text-lg mt-2 text-berkeley-light/80">
+            Maximilian Christof - Fall 2024
+          </p>
+        </div>
+      </section>
 
-      {/* Part 1: Selfie Comparison */}
-      <ProjectPart
-        partNumber={1}
-        title='Portrait Photography: "The Wrong Way vs. The Right Way"'
-        description="Understand how distance and zoom affect facial proportions in portrait photography"
-        detailedDescription={[
-          "Result: Although face size remains similar between photos, the facial proportions look dramatically different.",
-          "The close-up selfie appears distorted due to perspective distortion, where proximity to the lens makes closer features like your nose seem disproportionately large, while stepping back and zooming in compresses depth for more flattering, natural proportions. However, beyond the point of 3 x zoom, we are already far enough away that further zooming yields only minimal, less perceptible changes in perspective."
-        ]}
-        className="bg-gradient-to-r from-berkeley-light/10 to-transparent"
-      >
-        <ImageGallery 
-          count={5} 
-          layout="horizontal-scroll" 
-          labels={["0.5 x Zoom", "1 x Zoom", "2 x Zoom", "3 x Zoom", "5 x Zoom"]}
-          images={[
-            image05,
-            image1,
-            image2,
-            image3,
-            image5,
-          ]}
-          aspectRatio="portrait"
-        />
-      </ProjectPart>
+      {/* Projects Grid */}
+      <section className="container mx-auto px-6 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-berkeley-navy mb-4">
+            Project Portfolio
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Explore a collection of computer vision and computational photography projects, 
+            each demonstrating different techniques and concepts in the field.
+          </p>
+        </div>
 
-      {/* Part 2: Architectural Perspective */}
-      <ProjectPart
-        partNumber={2}
-        title="Architectural Perspective Compression"
-        description="Explore how focal length affects the perception of depth in urban scenes"
-        detailedDescription={["Result: The zoomed telephoto image exhibits perspective compression, where the distant camera position minimizes the relative size difference between foreground and background objects, causing the car on the right to appear flattened. Conversely, the non-zoomed shot exaggerates perspective by making the car's nearer components look significantly larger than its farther ones, showing greater three-dimensional depth.",
-        "This comparison shows that perceived spatial depth is dictated by the camera's physical location and cannot be compensated for with its focal length."]}
-        className="bg-background"
-      >
-        <ImageGallery 
-          count={2} 
-          layout="grid" 
-          labels={["No Zoom (Appears Stretched)", "Zoomed In (Appears Compressed)"]}
-          images={[
-            streetStretched,
-            nonStretchedStreet,
-          ]}
-        />
-      </ProjectPart>
-
-      {/* Part 3: Dolly Zoom */}
-      <ProjectPart
-        partNumber={3}
-        title="The Dolly Zoom (Vertigo Effect)"
-        description="Create the classic Hitchcock camera movement effect"
-        detailedDescription={["Result: In this example, the Vertigo effect is created by moving away from the subject while zooming in to keep the subject the same size in frame. This produces a disorienting visual where the background appears to expand substantially and stretch outward due to the wider focal length from the closer position. The surrounding space seems to grow larger around the stationary subject, creating spatial distortion and an unsettling sensation as the environment expands while the central subject remains unchanged.",
-        "Note: The reason why the background appears to stretch is most likely because the the object of the same size is in the middle of the scene this time opposed to the first car on the right hand side in Part 2."
-        ]}
-        className="bg-gradient-to-l from-berkeley-light/10 to-transparent"
-      >
-        <ImageGallery 
-          count={1} 
-          layout="single" 
-          labels={["Dolly Zoom GIF Animation"]}
-          images={[
-            dollyZoom,
-          ]}
-        />
-      </ProjectPart>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project) => (
+            <Card key={project.id} className="hover:shadow-lg transition-shadow duration-300">
+              <CardHeader>
+                <div className="flex justify-between items-start mb-2">
+                  <Badge variant={project.status === "Completed" ? "default" : "secondary"}>
+                    {project.status}
+                  </Badge>
+                  <span className="text-sm text-gray-500">Project {project.id}</span>
+                </div>
+                <CardTitle className="text-xl text-berkeley-navy">
+                  {project.title}
+                </CardTitle>
+                <CardDescription className="text-berkeley-navy/70 font-medium">
+                  {project.subtitle}
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  {project.description}
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.topics.map((topic) => (
+                    <Badge key={topic} variant="outline" className="text-xs">
+                      {topic}
+                    </Badge>
+                  ))}
+                </div>
+                {project.status === "Completed" ? (
+                  <Link to={project.route}>
+                    <Button className="w-full bg-berkeley-navy hover:bg-berkeley-navy/90">
+                      View Project
+                    </Button>
+                  </Link>
+                ) : (
+                  <Button 
+                    disabled 
+                    className="w-full"
+                    variant="outline"
+                  >
+                    Coming Soon
+                  </Button>
+                )}
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="bg-berkeley-navy text-white py-12">
         <div className="container mx-auto px-6 text-center">
-          <p className="text-berkeley-light mb-2">Maximilian Christof - CS180 Project 0</p>
+          <p className="text-berkeley-light mb-2">UC Berkeley - Computer Science 180</p>
           <p className="text-sm text-berkeley-light/70">
-            Understanding perspective, focal length, and the center of projection
+            Intro to Computer Vision and Computational Photography
           </p>
         </div>
       </footer>
