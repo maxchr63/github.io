@@ -7,7 +7,7 @@ const HeroSection = () => {
       {/* Animated Background */}
       <div className="absolute inset-0">
         <img 
-          src="/berkeley-hero.jpg"
+          src="berkeley-hero.jpg"
           alt="Berkeley cityscape with traffic direction signs"
           className="w-full h-full object-cover opacity-40"
         />
