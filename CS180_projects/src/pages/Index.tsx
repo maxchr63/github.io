@@ -23,6 +23,15 @@ const Index = () => {
       status: "Completed",
       topics: ["Image Alignment", "Color Reconstruction", "Multi-scale Processing", "Historical Photography"],
       route: "/project-1"
+    },
+    {
+      id: 3,
+      title: "Fun with Filters and Frequencies!",
+      subtitle: "Filters, Edges, and Frequency Analysis",
+      description: "Exploring convolution, edge detection, unsharp masking, hybrid images, and multi-resolution blending through frequency domain analysis.",
+      status: "Completed",
+      topics: ["Filters", "Edge Detection", "Hybrid Images", "Frequency Analysis", "Image Blending"],
+      route: "/project-3"
     }
   ];
 
