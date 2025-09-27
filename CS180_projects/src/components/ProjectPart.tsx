@@ -33,20 +33,23 @@ const ProjectPart = ({
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
               {description}
             </p>
-            <div className="bg-muted/50 rounded-lg p-6 border border-berkeley-blue/10">
-              {/* <div className="text-berkeley-navy leading-relaxed space-y-4 "></div>text-justify */}
-              <div className="text-berkeley-navy leading-relaxed space-y-4 ">
-                {Array.isArray(detailedDescription) ? (
-                  detailedDescription.map((paragraph, index) => (
-                    <p key={index}>
-                      {paragraph}
-                    </p>
-                  ))
-                ) : (
-                  <p>{detailedDescription}</p>
-                )}
+            {/* Only render detailed description box if there's content */}
+            {(Array.isArray(detailedDescription) && detailedDescription.length > 0 && detailedDescription[0] !== "") || 
+             (!Array.isArray(detailedDescription) && detailedDescription !== "") ? (
+              <div className="bg-muted/50 rounded-lg p-6 border border-berkeley-blue/10 mb-8">
+                <div className="text-berkeley-navy leading-relaxed space-y-4 ">
+                  {Array.isArray(detailedDescription) ? (
+                    detailedDescription.map((paragraph, index) => (
+                      <p key={index}>
+                        {paragraph}
+                      </p>
+                    ))
+                  ) : (
+                    <p>{detailedDescription}</p>
+                  )}
+                </div>
               </div>
-            </div>
+            ) : null}
           </div>
 
           {/* Part Content */}

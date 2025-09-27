@@ -25,13 +25,13 @@ const Index = () => {
       route: "/project-1"
     },
     {
-      id: 3,
+      id: 2,
       title: "Fun with Filters and Frequencies!",
       subtitle: "Filters, Edges, and Frequency Analysis",
       description: "Exploring convolution, edge detection, unsharp masking, hybrid images, and multi-resolution blending through frequency domain analysis.",
       status: "Completed",
       topics: ["Filters", "Edge Detection", "Hybrid Images", "Frequency Analysis", "Image Blending"],
-      route: "/project-3"
+      route: "/project-2"
     }
   ];
 
