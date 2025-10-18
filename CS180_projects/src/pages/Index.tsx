@@ -32,6 +32,15 @@ const Index = () => {
       status: "Completed",
       topics: ["Filters", "Edge Detection", "Hybrid Images", "Frequency Analysis", "Image Blending"],
       route: "/project-2"
+    },
+    {
+      id: 3,
+      title: "Image Warping and Mosaicing",
+      subtitle: "Homographies, Warping, and Panoramic Mosaics",
+      description: "Creating image mosaics through homography computation, perspective warping, and blending techniques for seamless panoramic images.",
+      status: "Completed",
+      topics: ["Homographies", "Image Warping", "Mosaicing", "Perspective Correction", "Image Blending"],
+      route: "/project-3"
     }
   ];
 

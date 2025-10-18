@@ -181,10 +181,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="4 For Loops Implementation"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/1.1_4forloops.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/1.1_4forloops.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/1.1_4forloops.png`}
+                      src={`${import.meta.env.BASE_URL}project2/1.1_4forloops.png`}
                       alt="4 for loops convolution"
                       className="w-full max-w-2xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -194,10 +194,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="2 For Loops Implementation"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/1.1_2forloops.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/1.1_2forloops.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/1.1_2forloops.png`}
+                      src={`${import.meta.env.BASE_URL}project2/1.1_2forloops.png`}
                       alt="2 for loops convolution"
                       className="w-full max-w-2xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -207,10 +207,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="SciPy Conv Implementation"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/1.1_scipy_conv.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/1.1_scipy_conv.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/1.1_scipy_conv.png`}
+                      src={`${import.meta.env.BASE_URL}project2/1.1_scipy_conv.png`}
                       alt="scipy convolution"
                       className="w-full max-w-2xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -294,10 +294,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="Cameraman Binarization Testing"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/1.2_crameraman_binarization_testing.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/1.2_crameraman_binarization_testing.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/1.2_crameraman_binarization_testing.png`}
+                      src={`${import.meta.env.BASE_URL}project2/1.2_crameraman_binarization_testing.png`}
                       alt="cameraman binarization testing"
                       className="w-full max-w-4xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -307,10 +307,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="Cameraman Binarization High Threshold"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/1.2_crameraman_binarization_testing_high.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/1.2_crameraman_binarization_testing_high.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/1.2_crameraman_binarization_testing_high.png`}
+                      src={`${import.meta.env.BASE_URL}project2/1.2_crameraman_binarization_testing_high.png`}
                       alt="cameraman binarization high threshold"
                       className="w-full max-w-4xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -320,10 +320,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="Cameraman Gradient"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/1.2_crameraman_gradient.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/1.2_crameraman_gradient.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/1.2_crameraman_gradient.png`}
+                      src={`${import.meta.env.BASE_URL}project2/1.2_crameraman_gradient.png`}
                       alt="cameraman gradient"
                       className="w-full max-w-4xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -333,10 +333,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="Cameraman Side by Side"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/1.2_crameraman_sidebyside.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/1.2_crameraman_sidebyside.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/1.2_crameraman_sidebyside.png`}
+                      src={`${import.meta.env.BASE_URL}project2/1.2_crameraman_sidebyside.png`}
                       alt="cameraman "
                       className="w-full max-w-4xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -362,10 +362,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="Cameraman Gradient After Smoothing"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/1.3_crameraman_gradient_after_smoothing.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/1.3_crameraman_gradient_after_smoothing.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/1.3_crameraman_gradient_after_smoothing.png`}
+                      src={`${import.meta.env.BASE_URL}project2/1.3_crameraman_gradient_after_smoothing.png`}
                       alt="cameraman gradient after smoothing"
                       className="w-full max-w-4xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -375,10 +375,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="Cameraman Gradient Testing"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/1.3_crameraman_gradient_testing.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/1.3_crameraman_gradient_testing.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/1.3_crameraman_gradient_testing.png`}
+                      src={`${import.meta.env.BASE_URL}project2/1.3_crameraman_gradient_testing.png`}
                       alt="cameraman gradient testing"
                       className="w-full max-w-4xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -388,10 +388,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="DoG Filter Visualization"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/1.3_DoG_Filter.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/1.3_DoG_Filter.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/1.3_DoG_Filter.png`}
+                      src={`${import.meta.env.BASE_URL}project2/1.3_DoG_Filter.png`}
                       alt="DoG filter visualization"
                       className="w-full max-w-3xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -401,10 +401,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="Cameraman Difference of Approaches"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/1.3_crameraman_difference_of_approaches.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/1.3_crameraman_difference_of_approaches.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/1.3_crameraman_difference_of_approaches.png`}
+                      src={`${import.meta.env.BASE_URL}project2/1.3_crameraman_difference_of_approaches.png`}
                       alt="cameraman difference of approaches"
                       className="w-full max-w-4xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -440,10 +440,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="Cathedral Image Decomposition"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/2.1_cathedral_decomposition.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/2.1_cathedral_decomposition.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/2.1_cathedral_decomposition.png`}
+                      src={`${import.meta.env.BASE_URL}project2/2.1_cathedral_decomposition.png`}
                       alt="cathedral decomposition"
                       className="w-full max-w-4xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -453,10 +453,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="Cathedral Sharpened Best"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/2.1_cathedral_sharpened_best.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/2.1_cathedral_sharpened_best.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/2.1_cathedral_sharpened_best.png`}
+                      src={`${import.meta.env.BASE_URL}project2/2.1_cathedral_sharpened_best.png`}
                       alt="cathedral sharpened best"
                       className="w-full max-w-4xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -466,10 +466,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="Blur Sharpen Blur Process"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/2.1_blurr_sharpen_blurr.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/2.1_blurr_sharpen_blurr.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/2.1_blurr_sharpen_blurr.png`}
+                      src={`${import.meta.env.BASE_URL}project2/2.1_blurr_sharpen_blurr.png`}
                       alt="blur sharpen blur process"
                       className="w-full max-w-4xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -479,10 +479,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="National Park Enhancement"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/2.1_national_park_enhancement.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/2.1_national_park_enhancement.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/2.1_national_park_enhancement.png`}
+                      src={`${import.meta.env.BASE_URL}project2/2.1_national_park_enhancement.png`}
                       alt="national park enhancement"
                       className="w-full max-w-4xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -492,10 +492,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="Skyline Enhancement"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/2.1_skyline_enhancement.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/2.1_skyline_enhancement.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/2.1_skyline_enhancement.png`}
+                      src={`${import.meta.env.BASE_URL}project2/2.1_skyline_enhancement.png`}
                       alt="skyline enhancement"
                       className="w-full max-w-4xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -505,10 +505,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="National Park Enhancement Side by Side"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/2.1_nationalpark_enhancement_sidebyside.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/2.1_nationalpark_enhancement_sidebyside.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/2.1_nationalpark_enhancement_sidebyside.png`}
+                      src={`${import.meta.env.BASE_URL}project2/2.1_nationalpark_enhancement_sidebyside.png`}
                       alt="national park enhancement side by side"
                       className="w-full max-w-4xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -518,10 +518,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="Skyline Enhancement Side by Side"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/2.1_skyline_enhancement_sidebyside.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/2.1_skyline_enhancement_sidebyside.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/2.1_skyline_enhancement_sidebyside.png`}
+                      src={`${import.meta.env.BASE_URL}project2/2.1_skyline_enhancement_sidebyside.png`}
                       alt="skyline enhancement side by side"
                       className="w-full max-w-4xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -615,10 +615,10 @@ const Project2 = () => {
                   <div className="text-center">
                     <ImageWithModal 
                       imageName="Derek + Nutmeg Alignments"
-                      imageSrc={`${import.meta.env.BASE_URL}project3/2.2_hybrid_nutmeg_alignments.png`}
+                      imageSrc={`${import.meta.env.BASE_URL}project2/2.2_hybrid_nutmeg_alignments.png`}
                     >
                       <img 
-                        src={`${import.meta.env.BASE_URL}project3/2.2_hybrid_nutmeg_alignments.png`}
+                        src={`${import.meta.env.BASE_URL}project2/2.2_hybrid_nutmeg_alignments.png`}
                         alt="derek nutmeg alignments"
                         className="w-full h-64 object-contain rounded-lg bg-white mb-2"
                       />
@@ -628,10 +628,10 @@ const Project2 = () => {
                   <div className="text-center">
                     <ImageWithModal 
                       imageName="Derek + Nutmeg Scale Comparison"
-                      imageSrc={`${import.meta.env.BASE_URL}project3/2.2_hybrid_nutmeg_derek_scale_comparison.png`}
+                      imageSrc={`${import.meta.env.BASE_URL}project2/2.2_hybrid_nutmeg_derek_scale_comparison.png`}
                     >
                       <img 
-                        src={`${import.meta.env.BASE_URL}project3/2.2_hybrid_nutmeg_derek_scale_comparison.png`}
+                        src={`${import.meta.env.BASE_URL}project2/2.2_hybrid_nutmeg_derek_scale_comparison.png`}
                         alt="derek nutmeg scale comparison"
                         className="w-full h-64 object-contain rounded-lg bg-white mb-2"
                       />
@@ -644,10 +644,10 @@ const Project2 = () => {
                   <div className="text-center">
                     <ImageWithModal 
                       imageName="Derek + Nutmeg Greyscale"
-                      imageSrc={`${import.meta.env.BASE_URL}project3/2.2_hybrid_nutmeg_derek_grey.png`}
+                      imageSrc={`${import.meta.env.BASE_URL}project2/2.2_hybrid_nutmeg_derek_grey.png`}
                     >
                       <img 
-                        src={`${import.meta.env.BASE_URL}project3/2.2_hybrid_nutmeg_derek_grey.png`}
+                        src={`${import.meta.env.BASE_URL}project2/2.2_hybrid_nutmeg_derek_grey.png`}
                         alt="derek nutmeg greyscale"
                         className="w-full h-64 object-contain rounded-lg bg-white mb-2"
                       />
@@ -657,10 +657,10 @@ const Project2 = () => {
                   <div className="text-center">
                     <ImageWithModal 
                       imageName="Derek + Nutmeg Color"
-                      imageSrc={`${import.meta.env.BASE_URL}project3/2.2_hybrid_nutmeg_derek.png`}
+                      imageSrc={`${import.meta.env.BASE_URL}project2/2.2_hybrid_nutmeg_derek.png`}
                     >
                       <img 
-                        src={`${import.meta.env.BASE_URL}project3/2.2_hybrid_nutmeg_derek.png`}
+                        src={`${import.meta.env.BASE_URL}project2/2.2_hybrid_nutmeg_derek.png`}
                         alt="derek nutmeg color"
                         className="w-full h-64 object-contain rounded-lg bg-white mb-2"
                       />
@@ -673,10 +673,10 @@ const Project2 = () => {
                   <div className="text-center">
                     <ImageWithModal 
                       imageName="Derek + Nutmeg with Frequency Analysis"
-                      imageSrc={`${import.meta.env.BASE_URL}project3/2.2_hybrid_nutmeg_derek_grey_with_freq.png`}
+                      imageSrc={`${import.meta.env.BASE_URL}project2/2.2_hybrid_nutmeg_derek_grey_with_freq.png`}
                     >
                       <img 
-                        src={`${import.meta.env.BASE_URL}project3/2.2_hybrid_nutmeg_derek_grey_with_freq.png`}
+                        src={`${import.meta.env.BASE_URL}project2/2.2_hybrid_nutmeg_derek_grey_with_freq.png`}
                         alt="derek nutmeg with frequency analysis"
                         className="w-full max-w-5xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                       />
@@ -693,10 +693,10 @@ const Project2 = () => {
                   <div className="text-center">
                     <ImageWithModal 
                       imageName="Hybrid Glasses Greyscale"
-                      imageSrc={`${import.meta.env.BASE_URL}project3/2.2_hybrid_glasses_grey.png`}
+                      imageSrc={`${import.meta.env.BASE_URL}project2/2.2_hybrid_glasses_grey.png`}
                     >
                       <img 
-                        src={`${import.meta.env.BASE_URL}project3/2.2_hybrid_glasses_grey.png`}
+                        src={`${import.meta.env.BASE_URL}project2/2.2_hybrid_glasses_grey.png`}
                         alt="hybrid glasses greyscale"
                         className="w-full h-48 object-contain rounded-lg bg-white mb-2"
                       />
@@ -706,10 +706,10 @@ const Project2 = () => {
                   <div className="text-center">
                     <ImageWithModal 
                       imageName="Hybrid Glasses Color"
-                      imageSrc={`${import.meta.env.BASE_URL}project3/2.2_hybrid_glasses.png`}
+                      imageSrc={`${import.meta.env.BASE_URL}project2/2.2_hybrid_glasses.png`}
                     >
                       <img 
-                        src={`${import.meta.env.BASE_URL}project3/2.2_hybrid_glasses.png`}
+                        src={`${import.meta.env.BASE_URL}project2/2.2_hybrid_glasses.png`}
                         alt="hybrid glasses color"
                         className="w-full h-48 object-contain rounded-lg bg-white mb-2"
                       />
@@ -719,10 +719,10 @@ const Project2 = () => {
                   <div className="text-center">
                     <ImageWithModal 
                       imageName="Hybrid Glasses Grid"
-                      imageSrc={`${import.meta.env.BASE_URL}project3/2.2_hybrid_glasses_grid.png`}
+                      imageSrc={`${import.meta.env.BASE_URL}project2/2.2_hybrid_glasses_grid.png`}
                     >
                       <img 
-                        src={`${import.meta.env.BASE_URL}project3/2.2_hybrid_glasses_grid.png`}
+                        src={`${import.meta.env.BASE_URL}project2/2.2_hybrid_glasses_grid.png`}
                         alt="hybrid glasses grid"
                         className="w-full h-48 object-contain rounded-lg bg-white mb-2"
                       />
@@ -738,10 +738,10 @@ const Project2 = () => {
                   <div className="text-center">
                     <ImageWithModal 
                       imageName="Hybrid Tree Greyscale"
-                      imageSrc={`${import.meta.env.BASE_URL}project3/2.2_hybrid_tree_grey.png`}
+                      imageSrc={`${import.meta.env.BASE_URL}project2/2.2_hybrid_tree_grey.png`}
                     >
                       <img 
-                        src={`${import.meta.env.BASE_URL}project3/2.2_hybrid_tree_grey.png`}
+                        src={`${import.meta.env.BASE_URL}project2/2.2_hybrid_tree_grey.png`}
                         alt="hybrid tree greyscale"
                         className="w-full h-48 object-contain rounded-lg bg-white mb-2"
                       />
@@ -751,10 +751,10 @@ const Project2 = () => {
                   <div className="text-center">
                     <ImageWithModal 
                       imageName="Hybrid Tree Color"
-                      imageSrc={`${import.meta.env.BASE_URL}project3/2.2_hybrid_tree.png`}
+                      imageSrc={`${import.meta.env.BASE_URL}project2/2.2_hybrid_tree.png`}
                     >
                       <img 
-                        src={`${import.meta.env.BASE_URL}project3/2.2_hybrid_tree.png`}
+                        src={`${import.meta.env.BASE_URL}project2/2.2_hybrid_tree.png`}
                         alt="hybrid tree color"
                         className="w-full h-48 object-contain rounded-lg bg-white mb-2"
                       />
@@ -764,10 +764,10 @@ const Project2 = () => {
                   <div className="text-center">
                     <ImageWithModal 
                       imageName="Hybrid Tree Grid"
-                      imageSrc={`${import.meta.env.BASE_URL}project3/2.2_hybrid_tree_grid.png`}
+                      imageSrc={`${import.meta.env.BASE_URL}project2/2.2_hybrid_tree_grid.png`}
                     >
                       <img 
-                        src={`${import.meta.env.BASE_URL}project3/2.2_hybrid_tree_grid.png`}
+                        src={`${import.meta.env.BASE_URL}project2/2.2_hybrid_tree_grid.png`}
                         alt="hybrid tree grid"
                         className="w-full h-48 object-contain rounded-lg bg-white mb-2"
                       />
@@ -841,10 +841,10 @@ const Project2 = () => {
               <div className="text-center mb-8">
                 <ImageWithModal 
                   imageName="Orange + Apple Grid"
-                  imageSrc={`${import.meta.env.BASE_URL}project3/2.3_oraple_grid.png`}
+                  imageSrc={`${import.meta.env.BASE_URL}project2/2.3_oraple_grid.png`}
                 >
                   <img 
-                    src={`${import.meta.env.BASE_URL}project3/2.3_oraple_grid.png`}
+                    src={`${import.meta.env.BASE_URL}project2/2.3_oraple_grid.png`}
                     alt="orange apple grid"
                     className="w-full max-w-4xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                   />
@@ -903,10 +903,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="Political Blend"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/2.4_political_blend.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/2.4_political_blend.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/2.4_political_blend.png`}
+                      src={`${import.meta.env.BASE_URL}project2/2.4_political_blend.png`}
                       alt="political blend"
                       className="w-full max-w-5xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -917,10 +917,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="Political Blend 2"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/2.4_political_blend_2.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/2.4_political_blend_2.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/2.4_political_blend_2.png`}
+                      src={`${import.meta.env.BASE_URL}project2/2.4_political_blend_2.png`}
                       alt="political blend 2"
                       className="w-full max-w-5xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -931,10 +931,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="Mask Visualization"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/2.4_mask_visualization.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/2.4_mask_visualization.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/2.4_mask_visualization.png`}
+                      src={`${import.meta.env.BASE_URL}project2/2.4_mask_visualization.png`}
                       alt="mask visualization"
                       className="w-full max-w-5xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -945,10 +945,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="Berkeley Blend"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/2.4_berkeley_blend.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/2.4_berkeley_blend.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/2.4_berkeley_blend.png`}
+                      src={`${import.meta.env.BASE_URL}project2/2.4_berkeley_blend.png`}
                       alt="berkeley blend"
                       className="w-full max-w-5xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -959,10 +959,10 @@ const Project2 = () => {
                 <div className="text-center">
                   <ImageWithModal 
                     imageName="Berkeley Blend Trigonometric Process"
-                    imageSrc={`${import.meta.env.BASE_URL}project3/2.4_berkeley_blend_trigonometric.png`}
+                    imageSrc={`${import.meta.env.BASE_URL}project2/2.4_berkeley_blend_trigonometric.png`}
                   >
                     <img 
-                      src={`${import.meta.env.BASE_URL}project3/2.4_berkeley_blend_trigonometric.png`}
+                      src={`${import.meta.env.BASE_URL}project2/2.4_berkeley_blend_trigonometric.png`}
                       alt="berkeley blend trigonometric"
                       className="w-full max-w-5xl mx-auto h-auto object-contain rounded-lg bg-white mb-2"
                     />
@@ -985,7 +985,7 @@ const Project2 = () => {
               
               <div className="space-y-6 mb-8">
                 <p className="text-gray-700 leading-relaxed">
-                  The fundamental revelation of this project was understanding how images are essentially composed of different frequency components, each carrying distinct visual information. High frequencies capture fine details like edges and textures, while low frequencies represent broader patterns and overall structure. This frequency-domain perspective completely changed how I approach image processing—realizing that techniques like blurring, sharpening, and hybrid image creation are really just sophisticated ways of manipulating these frequency bands.
+                  The fundamental revelation of this project was understanding how images are essentially composed of different frequency components, each carrying distinct visual information. High frequencies capture fine details like edges and textures, while low frequencies represent broader patterns and overall structure. This frequency-domain perspective completely changed how I approach image processing, realizing that techniques like blurring, sharpening, and hybrid image creation are really just sophisticated ways of manipulating these frequency bands.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   Working with Gaussian and Laplacian stacks enhanced my knowledge about the multi-scale nature of visual perception. The ability to decompose images into different levels of detail and then selectively enhance or suppress certain frequencies provides incredible creative and analytical power. Whether creating hybrid images that change appearance based on viewing distance, or blending images seamlessly using multi-resolution techniques, it all comes down to understanding how our visual system processes different frequency information.

@@ -119,7 +119,7 @@ const Project1 = () => {
                   When combined, these images produced vivid color photographs, offering a rare glimpse into life over a century ago. Now preserved by the Library of Congress, the collection includes 1,902 digitized triple-frame glass negatives.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Prokudin-Gorskii believed in the future of color photography, and his method involved creating triple-frame negatives for vibrant projections. The task today is to align these three color channels—red, green, and blue—accurately, recreating sharp and true-to-original color images. Proper alignment avoids blurring and ensures the photographs reflect Prokudin-Gorskii's vision.
+                  Prokudin-Gorskii believed in the future of color photography, and his method involved creating triple-frame negatives for vibrant projections. The task today is to align these three color channels, red, green, and blue, accurately, recreating sharp and true-to-original color images. Proper alignment avoids blurring and ensures the photographs reflect Prokudin-Gorskii's vision.
                 </p>
               </div>
               {/* Images on the right */}
@@ -501,7 +501,7 @@ const Project1 = () => {
                   <li><strong>Adaptive Contrast Adjustment:</strong> With the borders removed and the base colors corrected, the adaptive gamma correction is applied. This step adjusts the image's overall brightness and contrast, enhancing detail in both the shadow and highlight regions. An adjustment magnitude of 90% is used to apply a strong but not overpowering correction.</li>
                   <li><strong>White Balancing:</strong> The final step in the pipeline is a combined white balance adjustment. This fine-tunes the color temperature and brightness of the image to achieve a natural and visually neutral result, correcting any remaining color casts.</li>
                 </ol>
-                <p>This specific sequence—crop, color correct, contrast, then white balance—ensures that each enhancement builds logically on the previous one, leading to a clean, well-balanced, and visually appealing final image.</p>
+                <p>This specific sequence, crop, color correct, contrast, then white balance, ensures that each enhancement builds logically on the previous one, leading to a clean, well-balanced, and visually appealing final image.</p>
               </div>
               <div className="bg-white p-6 rounded-lg mb-4">
                 <h4 className="text-xl font-bold text-berkeley-navy mb-4">Automatic Border Cropping</h4>
