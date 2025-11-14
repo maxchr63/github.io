@@ -41,6 +41,15 @@ const Index = () => {
       status: "Completed",
       topics: ["Homographies", "Image Warping", "Mosaicing", "Perspective Correction", "Image Blending"],
       route: "/project-3"
+    },
+    {
+      id: 4,
+      title: "Neural Radiance Fields (NeRF)",
+      subtitle: "3D Scene Reconstruction with Neural Rendering",
+      description: "Building neural radiance fields from multi-view images using volumetric ray marching, camera calibration, and neural density prediction.",
+      status: "Completed",
+      topics: ["ArUco Calibration", "Positional Encoding", "Volume Rendering", "Neural Networks", "Novel View Synthesis"],
+      route: "/project-4"
     }
   ];
 
