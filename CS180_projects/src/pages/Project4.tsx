@@ -777,7 +777,7 @@ const Project4 = () => {
                         <strong>Resolution management</strong> trades quality against training speed. The Part 0 pipeline downsampled images to 850 pixels (longer dimension) while preserving aspect ratio, updating intrinsic parameters accordingly. Training first used 32 samples per ray to validate the implementation, then increased to 128 samples for final rendering.
                       </p>
                       <p className="text-gray-700 leading-relaxed">
-                        <strong>Network capacity scaling</strong> addressed the increased scene complexity. The custom dataset model employed 512 hidden units (versus 256 for Lego), positional encoding L=12 (versus 10), and learning rate 10⁻³ (versus 5×10⁻⁴). Higher learning rates accelerate convergence on simpler scenes but risk instability on complex geometry. The training loop extended to 25,000 iterations with checkpoints every 200 steps.
+                        <strong>Network capacity scaling</strong> addressed the increased scene complexity. The custom dataset model employed 512 hidden units (versus 256 for Lego), positional encoding L=12 (versus 10), and learning rate 10⁻³ (versus 5×10⁻⁴). Higher learning rates accelerate convergence on simpler scenes but risk instability on complex geometry. The training loop extended to 15,000 iterations with checkpoints every 200 steps.
                       </p>
                     </div>
 
@@ -789,7 +789,7 @@ const Project4 = () => {
                     </div>
 
                     <p className="text-gray-700 leading-relaxed mt-4">
-                      Training loss curves monitor optimization progress without requiring expensive rendering. Intermediate renders at logarithmically-spaced iterations reveal gradual sharpening as the network fits high-frequency detail. The final novel-view video demonstrates photorealistic synthesis, though training duration substantially exceeds the Lego benchmark due to increased scene complexity and higher sample counts.
+                      Training loss curves monitor optimization progress without requiring expensive rendering. Intermediate renders at progressively-spaced iterations reveal gradual sharpening as the network fits high-frequency detail. The final novel-view video demonstrates high-quality synthesis, though training duration substantially exceeds the Lego benchmark due to increased scene complexity and higher sample counts.
                     </p>
 
                     {/* Fluffy Results Images */}
@@ -932,7 +932,7 @@ const Project4 = () => {
               <div className="bg-purple-50 border-l-4 border-purple-400 p-6 rounded-lg">
                 <h4 className="text-lg font-semibold text-berkeley-navy mb-3">Technical Insights</h4>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  The complete pipeline integration, from ArUco calibration through aspect-ratio-preserving downsampling to volumetric neural rendering, demonstrates how classical computer vision (camera geometry, intrinsic/extrinsic parameters) combines with modern deep learning (implicit representations, differentiable rendering) to achieve photorealistic 3D reconstruction from 2D images.
+                  The complete pipeline integration, from ArUco calibration through aspect-ratio-preserving downsampling to volumetric neural rendering, demonstrates how classical computer vision (camera geometry, intrinsic/extrinsic parameters) combines with modern deep learning (implicit representations, differentiable rendering) to achieve high-quality 3D reconstruction from 2D images.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   Practical implementation considerations like device-specific chunk sizes (2048 rays for MPS, 4096 for CUDA), checkpoint frequency balancing disk I/O against resumability, and logarithmic iteration spacing for visualization all significantly impact development velocity and final model quality beyond the core algorithm.
