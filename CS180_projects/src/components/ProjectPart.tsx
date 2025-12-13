@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 interface ProjectPartProps {
-  partNumber: number;
+  partNumber: string | number;
   title: string;
   description: string;
   detailedDescription: string | string[];

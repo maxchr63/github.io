@@ -50,6 +50,15 @@ const Index = () => {
       status: "Completed",
       topics: ["ArUco Calibration", "Positional Encoding", "Volume Rendering", "Neural Networks", "Novel View Synthesis"],
       route: "/project-4"
+    },
+    {
+      id: 5,
+      title: "Fun With Diffusion Models!",
+      subtitle: "Exploring Diffusion Models and Flow Matching",
+      description: "Implementing diffusion models for image generation, exploring sampling techniques, image editing, and training flow matching from scratch.",
+      status: "Completed",
+      topics: ["DeepFloyd IF", "Flow Matching", "MNIST Training", "Image-to-Image", "Classifier-Free Guidance", "Visual Anagrams"],
+      route: "/project-5"
     }
   ];
 
