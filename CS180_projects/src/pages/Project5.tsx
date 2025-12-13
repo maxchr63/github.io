@@ -2274,15 +2274,96 @@ const Project5 = () => {
                     </div>
                   </div>
 
-                  {/* 2.5: Training the Class-Conditioned UNet */}
+                  {/* B.2.5: Training the Class-Conditional UNet */}
                   <div className="mb-8">
-                    <h5 className="text-lg font-semibold text-berkeley-navy mb-4">2.5: Training the Class-Conditioned UNet</h5>
+                    <h5 className="text-lg font-semibold text-berkeley-navy mb-4">B.2.5: Training the Class-Conditional UNet</h5>
                     <div className="space-y-4">
-                      <p className="text-gray-700 leading-relaxed">
-                        Training the fully conditioned model with both time and class information following Algorithm B.3. The unconditional dropout enables the model to work with and without class conditioning.
-                      </p>
-                      
-                      <p className="text-gray-600 italic">Images will be added: Training loss curve + Algorithm B.3 visualization</p>
+                      {/* Training Configuration */}
+                      <div className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-lg">
+                        <h6 className="font-semibold text-berkeley-navy mb-3">Training Configuration</h6>
+                        <div className="space-y-2 text-gray-700">
+                          <div><strong>Hyperparameters:</strong></div>
+                          <ul className="space-y-1 ml-4">
+                            <li>• Batch size: 64</li>
+                            <li>• Learning rate: 1e-2</li>
+                            <li>• Hidden dimension: 64</li>
+                            <li>• Epochs: 10</li>
+                            <li>• Unconditional dropout: p_uncond = 0.1</li>
+                            <li>• Timesteps: num_ts = 200 (increased from 50)</li>
+                          </ul>
+                        </div>
+                        <p className="text-gray-700 leading-relaxed mt-3">
+                          We increased the number of timesteps from 50 to 200 when adding class conditioning. This compensates for the greater information complexity. With class conditioning, the model must now maintain and update not just the general flow field toward digit-like structures, but specialized flows for each of the 10 digit classes. The higher temporal resolution (200 vs. 50 steps) provides more granular control over this class-specific generation process, allowing smoother interpolation paths from noise to each distinct digit topology.
+                        </p>
+                      </div>
+
+                      {/* Comparing With and Without LR Scheduler */}
+                      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-lg">
+                        <h6 className="font-semibold text-berkeley-navy mb-3">Comparing With and Without LR Scheduler</h6>
+                        <p className="text-gray-700 leading-relaxed mb-3">
+                          To evaluate the necessity of learning rate scheduling, we trained two variants:
+                        </p>
+                        <div className="space-y-3 text-gray-700">
+                          <div>
+                            <strong>Variant 1 (With Scheduler):</strong>
+                            <ul className="space-y-1 ml-4">
+                              <li>• Initial LR: 1e-2</li>
+                              <li>• Scheduler: ExponentialLR with γ = 0.1^(1/10)</li>
+                              <li>• Final LR: ~1e-3</li>
+                            </ul>
+                          </div>
+                          <div>
+                            <strong>Variant 2 (Without Scheduler):</strong>
+                            <ul className="space-y-1 ml-4">
+                              <li>• Constant LR: 2e-3 (not 1e-2)</li>
+                              <li>• No scheduling</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p className="text-gray-700 leading-relaxed mt-3">
+                          For the no-scheduler variant, we adapted the learning rate to 2e-3 instead of the original 1e-2. Higher constant learning rates (like 1e-2) caused training instability, with loss curves exhibiting erratic behavior and occasional divergence. The lower 2e-3 rate provides stable convergence throughout training.
+                        </p>
+                      </div>
+
+                      {/* Training Loss Comparison */}
+                      <div className="space-y-6">
+                        <h6 className="text-base font-semibold text-berkeley-navy">Training Loss Comparison</h6>
+                        
+                        <div className="space-y-6">
+                          <div className="space-y-4 flex flex-col items-center">
+                            <div className="w-3/5">
+                              <img 
+                                src={`${import.meta.env.BASE_URL}project5/part_b/class_conditioning/B2.5_Training_loss_comparison_with_and_wihtout_scheduler_1_plot.png`}
+                                alt="Training loss comparison with and without scheduler - single plot"
+                                className="w-full rounded-lg border-2 border-gray-200 shadow-md cursor-pointer"
+                                onClick={() => setSelectedImage(`${import.meta.env.BASE_URL}project5/part_b/class_conditioning/B2.5_Training_loss_comparison_with_and_wihtout_scheduler_1_plot.png`)}
+                              />
+                            </div>
+                            <p className="text-sm text-gray-600 text-center">Combined Training Loss Comparison</p>
+                          </div>
+                          
+                          <div className="space-y-4">
+                            <img 
+                              src={`${import.meta.env.BASE_URL}project5/part_b/class_conditioning/B2.5_Training_loss_comparison_with_and_wihtout_scheduler_2plots.png`}
+                              alt="Training loss comparison with and without scheduler - separate plots"
+                              className="w-full rounded-lg border-2 border-gray-200 shadow-md cursor-pointer"
+                              onClick={() => setSelectedImage(`${import.meta.env.BASE_URL}project5/part_b/class_conditioning/B2.5_Training_loss_comparison_with_and_wihtout_scheduler_2plots.png`)}
+                            />
+                            <p className="text-sm text-gray-600 text-center">Side-by-Side Training Loss Comparison</p>
+                          </div>
+                        </div>
+
+                        {/* Analysis */}
+                        <div className="bg-gray-50 border-l-4 border-gray-400 p-6 rounded-lg">
+                          <h6 className="font-semibold text-berkeley-navy mb-3">Observation</h6>
+                          <p className="text-gray-700 leading-relaxed mb-3">
+                            Both approaches achieve similar final loss values, demonstrating that careful tuning of a constant learning rate can match scheduled training. The scheduled version shows slightly smoother convergence, particularly in early epochs where the high initial rate enables rapid loss reduction. The constant 2e-3 rate converges more gradually but steadily.
+                          </p>
+                          <p className="text-gray-700 leading-relaxed">
+                            The key lesson: learning rate scheduling is not strictly necessary if you're willing to tune the constant rate appropriately. For this problem scale (MNIST, 10 classes, 64-dim hidden), a well-chosen constant rate of 2e-3 suffices. However, scheduling provides more robustness—the exponential decay automatically adapts to training phases without manual tuning.
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
