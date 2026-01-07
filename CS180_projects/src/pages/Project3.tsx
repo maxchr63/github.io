@@ -1584,7 +1584,7 @@ Equation 24: 0.0×h₁ + 0.0×h₂ + 0.0×h₃ + 1143.0×h₄ + 869.0×h₅ + 1.
 
       <footer className="bg-berkeley-navy text-white py-8">
         <div className="container mx-auto px-6 text-center">
-          <p>&copy; 2024 Project 3: Image Warping and Mosaicing</p>
+          <p>&copy; 2025 Project 3: Image Warping and Mosaicing</p>
         </div>
       </footer>
     </div>

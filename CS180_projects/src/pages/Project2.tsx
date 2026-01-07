@@ -1023,7 +1023,7 @@ const Project2 = () => {
 
       <footer className="bg-berkeley-navy text-white py-8">
         <div className="container mx-auto px-6 text-center">
-          <p>&copy; 2024 Project 2: Fun with Filters and Frequencies!</p>
+          <p>&copy; 2025 Project 2: Fun with Filters and Frequencies!</p>
         </div>
       </footer>
     </div>

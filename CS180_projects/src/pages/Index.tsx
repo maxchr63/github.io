@@ -80,7 +80,7 @@ const Index = () => {
             Computer Vision & Computational Photography
           </p>
           <p className="text-lg mt-2 text-berkeley-light/80">
-            Maximilian Christof - Fall 2024
+            Maximilian Christof - Fall 2025
           </p>
         </div>
       </section>

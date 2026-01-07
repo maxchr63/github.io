@@ -31,34 +31,34 @@ const Project5 = () => {
       <ProjectNavigation />
 
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-berkeley-navy/90 to-berkeley-blue/80"></div>
-        <div className="relative z-10 text-center px-6">
-          <h1 className="text-6xl md:text-7xl font-bold text-white mb-6">
-            Fun With Diffusion Models!
-          </h1>
-          <p className="text-xl md:text-2xl text-berkeley-light mb-8 max-w-4xl mx-auto leading-relaxed">
-            Exploring diffusion models for image generation and training flow matching from scratch
-          </p>
-          <div className="flex flex-wrap justify-center gap-3">
-            <Badge variant="secondary" className="text-base py-2 px-4 bg-white/10 text-white border-white/20">
-              DeepFloyd IF
-            </Badge>
-            <Badge variant="secondary" className="text-base py-2 px-4 bg-white/10 text-white border-white/20">
-              Flow Matching
-            </Badge>
-            <Badge variant="secondary" className="text-base py-2 px-4 bg-white/10 text-white border-white/20">
-              MNIST Training
-            </Badge>
-            <Badge variant="secondary" className="text-base py-2 px-4 bg-white/10 text-white border-white/20">
-              Image-to-Image
-            </Badge>
-            <Badge variant="secondary" className="text-base py-2 px-4 bg-white/10 text-white border-white/20">
-              Classifier-Free Guidance
-            </Badge>
-            <Badge variant="secondary" className="text-base py-2 px-4 bg-white/10 text-white border-white/20">
-              Visual Anagrams
-            </Badge>
+      <section className="relative min-h-[60vh] bg-gradient-to-br from-purple-900/20 via-berkeley-blue/30 to-green-900/20 overflow-hidden">
+        {/* Animated Background */}
+        <div className="absolute inset-0">
+          <img 
+            src={`${import.meta.env.BASE_URL}berkeley-hero.jpg`}
+            alt="Berkeley campus"
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background" />
+        </div>
+
+        <div className="relative z-10 container mx-auto px-6 pt-20 pb-16">
+          <div className="max-w-4xl">
+            {/* Course Info */}
+            <div className="flex items-center gap-2 mb-6">
+              <div className="w-5 h-5 text-berkeley-blue" />
+              <span className="text-berkeley-navy font-medium">Maximilian Christof - CS180 Project 5</span>
+            </div>
+
+            {/* Main Title */}
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-berkeley-navy via-berkeley-blue to-berkeley-navy bg-clip-text text-transparent leading-tight">
+              Fun With Diffusion Models!
+            </h1>
+
+            {/* Subtitle */}
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl leading-relaxed">
+              Exploring diffusion models for image generation and training flow matching from scratch with DeepFloyd IF and custom neural architectures.
+            </p>
           </div>
         </div>
       </section>

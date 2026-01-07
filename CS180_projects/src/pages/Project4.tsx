@@ -945,7 +945,7 @@ const Project4 = () => {
 
       <footer className="bg-berkeley-navy text-white py-8">
         <div className="container mx-auto px-6 text-center">
-          <p>&copy; 2024 Project 4: Neural Radiance Fields (NeRF)</p>
+          <p>&copy; 2025 Project 4: Neural Radiance Fields (NeRF)</p>
         </div>
       </footer>
     </div>
